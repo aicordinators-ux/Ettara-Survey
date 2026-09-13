@@ -499,7 +499,7 @@ const CUSTOMERS = [{"c":"P5A415047","n":"عطاره ماضى","reg":"Alex","dist
 /* ===== SURVEY FIELDS ===== */
 const FIELDS = [
   { id:"storeSize", label:"حجم المحل", type:"select", options:["صغير","متوسط","كبير"] },
-  { id:"homeShelf", label:"هل يوجد هوم شيلف؟", type:"yesno" },
+  { id:"homeShelf", label:"هل يوجد رفوف أو بوكسات بالمحل ؟", type:"yesno" },
   { id:"shelfCount", label:"عدد البوكسات / الأرفف فى المحل", type:"number",
     showIf:a=>a.homeShelf==="نعم", requiredIf:a=>a.homeShelf==="نعم" },
   { id:"standExists", label:"هل يوجد إستاند؟", type:"yesno" },
